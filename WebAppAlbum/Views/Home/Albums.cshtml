@@ -10,12 +10,15 @@
 <hr />
 <div class="row">
     <div class="col-md-6">
-        <div class="form-group">
-            <label for="album" class="custom-control-label">Album List</label>
-            <select asp-for="Album" asp-items="Model.Albums">
-                <option value="value">select</option>
-            </select>
-        </div>
+        <form asp-action="">
+            <div class="form-group">
+                <label for="album" class="custom-control-label">Album List</label>
+                <select asp-for="Album" asp-items="Model.Albums">
+                    <option value="value">select</option>
+                </select>
+                <input type="submit" id="chkalb" name="chkalb" value="Visualizar Album" class="btn btn-primary" asp-action="Photos" />
+            </div>
+        </form>
     </div>
 
 </div>

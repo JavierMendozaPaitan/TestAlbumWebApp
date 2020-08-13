@@ -46,6 +46,20 @@ namespace WebAppAlbum.Controllers
                 throw;
             }
         }
+
+        public IActionResult Photos(string Album)
+        {
+            try
+            {
+                var val = Album;
+
+                return View();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
