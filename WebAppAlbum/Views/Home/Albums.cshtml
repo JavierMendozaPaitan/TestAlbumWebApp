@@ -1,0 +1,21 @@
+﻿@model WAppDomainBase.Models.SelectAlbums;
+@{
+    ViewData["Title"] = "Search Albums";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<h4>Test Search Engine Counting</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="album" class="custom-control-label">Album List</label>
+            <select asp-for="Album" asp-items="Model.Albums">
+                <option value="value">select</option>
+            </select>
+        </div>
+    </div>
+
+</div>
