@@ -9,5 +9,6 @@ namespace WAppDomainBase.Interfaces
     {
         Func<SelectAlbums> SelectAlbums { get; }
         Func<List<Album>> GetAlbums { get; }
+        Func<string, List<Photo>> GetPhotos { get; }
     }
 }

@@ -6,6 +6,7 @@ namespace WAppDomainBase.Models
 {
     public class Photo
     {
+        public string AlbumId { get; set; }
         public string Name { get; set; }
         public DateTime CreationDate { get; set; }
         public List<Comment> Comments { get; set; }

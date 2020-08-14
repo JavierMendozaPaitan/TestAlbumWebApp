@@ -51,9 +51,9 @@ namespace WebAppAlbum.Controllers
         {
             try
             {
-                var val = Album;
+                var lpth = srv.GetPhotos(Album);
 
-                return View();
+                return View(lpth);
             }
             catch (Exception)
             {
