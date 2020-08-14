@@ -51,9 +51,14 @@ namespace WebAppAlbum.Controllers
         {
             try
             {
-                var lpth = srv.GetPhotos(Album);
+                if (!Album.Equals("noselect"))
+                {
+                    var lpth = srv.GetPhotos(Album);
 
-                return View(lpth);
+                    return View(lpth);
+                }
+                else
+                    return View("Albums", srv.SelectAlbums());
             }
             catch (Exception)
             {
